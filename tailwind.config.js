@@ -1,16 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/**/*.{html,js}",        
-    "./node_modules/flowbite/**/*.js"
-
-  ],
-  
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+      extend: {
+          colors: {
+              primary: "#17AF26",
+              secondary: "#05422C",
+              "neutral-400": "#F4F4F4",
+          },
+          backgroundSize: {
+              "50%": "50%",
+          },
+      },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
-}
-
+  plugins: [],
+};
