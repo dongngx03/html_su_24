@@ -6,11 +6,11 @@ body {
     font-family: 'Lexend', sans-serif;
 }
 
-/* input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-} */
+} 
 
 .container {
     @apply max-w-7xl mx-auto px-4;
@@ -28,9 +28,9 @@ input[type="number"]::-webkit-inner-spin-button {
     @apply h-[64px] leading-[64px] px-28 text-lg;
 }
 
-/* .main-title {
+.main-title {
     @apply text-[32px]/[120%] lg: mb-5 lg:text-[64px]/[110%]-tracking-[1.5px] lg:-tracking-[4px] font-semibold;
-} */
+}
 
 @media (min-width: 768px) {
     .lg\:btn-lg {
