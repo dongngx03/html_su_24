@@ -5,7 +5,6 @@
 body {
     font-family: 'Lexend', sans-serif;
 }
-
 .container {
     @apply max-w-7xl mx-auto px-4;
 }
@@ -39,4 +38,4 @@ body {
 }
 footer {
     background: linear-gradient(180deg, #1a1e26 0%, #01100b 100%);
-} 
+}
