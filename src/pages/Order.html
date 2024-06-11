@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../../public/styles/style.css" />
     <link
-    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../../public/styles/style.css" />
   </head>
   <body>
     <header>
@@ -128,7 +128,151 @@
       </div>
     </header>
 
-    <h1 class="text-4xl">toi la cuong</h1>
+    <!--new - order -->
+    <section class="px-6 md:px-24">
+      
+      <!-- title -->
+      <div class="flex justify-between my-6">
+        <p class="font-bold">Your Order</p>
+        <p class="text-[#17AF26] font-bold">
+          <span class="text-base bg-[#17AF26] border rounded-full">✔️</span>Paid
+        </p>
+      </div>
+      <!-- product order -->
+      <div class="mb-6">
+        <div class="mb-6">
+          <table class="w-full">
+            <tr class="*:text-sm">
+              <td class="py-4">
+                <img
+                  src="../../assets/icons/order/1.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+              </td>
+              <td class="py-4 *:text-[#9D9EA2] *:text-sm *:py-1">
+                <p>1x Khalifa Kush (AAAA)</p>
+                <p>Add Integra Pack - 4g</p>
+                <p>Add Integra Pack - 8g</p>
+                <p class="mt-4">Subtotal</p>
+              </td>
+              <td class="py-4 pl-4 md:pl-96 *:py-1">
+                <p>
+                  <span class="text-[#9D9EA2] text-right text-sm">2x</span>
+                  $120.00
+                </p>
+                <p>
+                  <span class="text-[#9D9EA2] text-right text-sm">1x</span>
+                  $10.00
+                </p>
+                <p>
+                  <span class="text-[#9D9EA2] text-right text-sm">1x</span>
+                  $10.00
+                </p>
+                <p class="opacity-0 mt-4">d</p>
+              </td>
+              <td class="py-4 pl-4 md:pl-96 *:py-1 *:text-right">
+                <p class="text-[#9D9EA2]">$240.00</p>
+                <p class="text-[#9D9EA2]">$10.00</p>
+                <p class="text-[#9D9EA2]">$10.00</p>
+                <p class="mt-4 text-right">$260.00</p>
+              </td>
+            </tr>
+            <tr class="*:text-sm">
+              <td class="py-4">
+                <img
+                  src="../../assets/icons/order/2.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+              </td>
+              <td class="py-4 text-[#9D9EA2] text-sm">Jungle Diamond (AA+)</td>
+              <td class="py-4 pl-4 md:pl-96">
+                <p><span class="text-[#9D9EA2] text-sm">1x</span> $10.00</p>
+              </td>
+              <td class="py-4 pl-4 md:pl-96 text-right">$10.00</td>
+            </tr>
+            <tr>
+              <td class="py-4">
+                <img
+                  src="../../assets/icons/order/3.png"
+                  width="40px"
+                  height="40px"
+                  alt=""
+                />
+              </td>
+              <td class="py-4 text-[#9D9EA2] text-sm">
+                Shipwreck Edibles Gummy
+              </td>
+              <td class="py-4 pl-4 md:pl-96">
+                <p><span class="text-[#9D9EA2] text-sm">4x</span> $10.00</p>
+              </td>
+              <td class="py-4 pl-4 md:pl-96 text-right">$40.00</td>
+            </tr>
+            <tr class="*:text-sm">
+              <td colspan="1" class="py-4"><strong>TOTAL</strong></td>
+              <td colspan="3" class="py-4 text-right text-[#EB2606]">
+                <strong>$310.00</strong>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- info order -->
+       
+      <div class="pb-6">
+        <table class="w-full">
+          <tr class="text-sm">
+            <td class="py-2 md:py-4 text-[#9D9EA2]">Shipping</td>
+            <td class="py-2 pl-4 md:pl-6 lg:pl-80 text-sm text-right">
+              New York, US
+            </td>
+            <td class="py-2 text-[#9D9EA2] px-6 text-left">Subtotal</td>
+            <td class="py-2 pl-4 md:pl-6 lg:pl-96 text-right">$10.00</td>
+          </tr>
+          <tr class="text-sm">
+            <td class="py-2 text-[#9D9EA2]">Shipping Options</td>
+            <td class="py-2 pl-4 md:pl-6 lg:pl-64 text-sm text-right">
+              Same-Day Dispatching
+            </td>
+            <td class="py-2 text-[#9D9EA2] text-left px-6">Discount</td>
+            <td class="py-2 pl-4 md:pl-6 lg:pl-96 text-right">$10.00</td>
+          </tr>
+          <tr class="text-sm">
+            <td class="py-2 text-[#9D9EA2]">Email Money Transfer</td>
+            <td class="py-2 pl-4 md:pl-6 lg:pl-80 text-right text-sm">
+              Interac
+            </td>
+            <td class="py-2 px-6 text-[#9D9EA2] text-left">Shipping Costs</td>
+            <td class="py-2 pl-4 md:pl-6 lg:pl-96 text-right">$10.00</td>
+          </tr>
+          <tr class="text-sm">
+            <td colspan="2" class="py-2 text-[#9D9EA2] text-right">Point</td>
+            <td colspan="2" class="py-2 text-right lg:pl-96">
+              <strong>- $250</strong>
+            </td>
+          </tr>
+          <tr class="text-sm">
+            <td colspan="2" class="py-2 text-right"><strong>TOTAL</strong></td>
+            <td colspan="2" class="py-2 text-right text-[#EB2606]">
+              <strong>$490.00</strong>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- click -->
+      <div class="my-10 mx-auto max-w-xs sm:max-w-md">
+        <p class="text-[#9D9EA2] text-center text-sm my-2">
+          New Order, Click button below
+        </p>
+        <button class="block mx-auto px-6 w-32 py-3 rounded-full bg-[#17AF26]">
+          Shop Now
+        </button>
+      </div>
+    </section>
+    <!-- services -->
     <section>
       <div class="container">
         <div class="bg-[#05422C] p-8 lg:p-16 rounded-2xl">
