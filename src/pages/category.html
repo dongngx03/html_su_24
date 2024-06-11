@@ -4,8 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../public/styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="../../public/styles/style.css" />
+		<link rel="stylesheet" href="../../assets/js/jquery.start-rating.svg.js" />
 	</head>
 	<body>
 		<header>
@@ -18,7 +23,7 @@
 				</div>
 			</div>
 			<div class="py-4 lg:border-b lg:border-neutral-400">
-				<div class="container">
+				<div class="container max-w-7xl mx-auto px-4">
 					<div class="flex flex-wrap lg:flex-nowrap justify-between lg:gap-8">
 						<div class="order-1 flex items-center space-x-4 lg:-ml-9">
 							<button class="lg:hidden">
@@ -39,7 +44,7 @@
 							</button>
 							<a href="">
 								<img
-									srcset="./assets/images/logo.png 2x"
+									srcset="../../assets/images/logo.png 2x"
 									alt=""
 									class="w-[119px] lg:w-full"
 								/>
@@ -54,7 +59,7 @@
 								class="py-1 pl-6 pr-1 rounded-full bg-white border border-[#F4F4F4] w-full lg:w-[400px]"
 								placeholder="Search"
 							/>
-							<button type="submit" class="bg-primary rounded-full w-[58px] lg:w-12 h-12">
+							<button type="submit" class="bg-secondary rounded-full w-[58px] lg:w-12 h-12">
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									fill="none"
@@ -101,7 +106,7 @@
 				<div class="container">
 					<nav>
 						<ul class="lg:flex items-center justify-center space-x-10 text-[#46494F]">
-							<li><a href="./src/pages/category.html" class="block py-4">Shop All</a></li>
+							<li><a href="" class="block py-4">Shop All</a></li>
 							<li><a href="" class="block py-4">Flower</a></li>
 							<li><a href="" class="block py-4">Edibles</a></li>
 							<li><a href="" class="block py-4">Concentrates</a></li>
@@ -115,11 +120,89 @@
 				</div>
 			</div>
 		</header>
+		<section class="bg-[#f2f6f4] py-[16px] lg:py-[24px]">
+			<div class="container px-32">
+				<div class="grid lg:grid-cols-3 gap-8">
+					<div class="grid grid-cols-[32px,auto] lg:grid-cols-[48px,auto] gap-6 items-center">
+						<div>
+							<div
+								class="bg-white rounded-full h-[32px] lg:h-[48px] flex items-center justify-center"
+							>
+								<img
+									src="../../assets/icons/new/truck-fast.svg"
+									alt=""
+									class="w-[18px] lg:w-[26px]"
+								/>
+							</div>
+						</div>
+						<div>
+							<h3 class="text-[#1A1E26] text-base lg:text-xl">Reliable Shipping</h3>
+						</div>
+					</div>
+					<div
+						class="border-l-2 border-zinc-300 pl-8 grid grid-cols-[32px,auto] lg:grid-cols-[48px,auto] gap-6 items-center"
+					>
+						<div>
+							<div
+								class="bg-white rounded-full h-[32px] lg:h-[48px] flex items-center justify-center"
+							>
+								<img
+									src="../../assets/icons/new/safe-home.svg"
+									alt=""
+									class="w-[18px] lg:w-[26px]"
+								/>
+							</div>
+						</div>
+						<div>
+							<h3 class="text-[#1A1E26] text-base lg:text-xl">You’re Safe With Us</h3>
+						</div>
+					</div>
+					<div
+						class="border-l-2 border-zinc-300 pl-8 grid grid-cols-[32px,auto] lg:grid-cols-[48px,auto] gap-6 items-center"
+					>
+						<div>
+							<div
+								class="bg-white rounded-full h-[32px] lg:h-[48px] flex items-center justify-center"
+							>
+								<img
+									src="../../assets/icons/new/coin.svg"
+									alt=""
+									class="w-[18px] lg:w-[26px]"
+								/>
+							</div>
+						</div>
+						<div>
+							<h3 class="text-[#1A1E26] text-base lg:text-xl">Best Quality & Pricing</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="semi-cta">
+			<div class="container max-w-7xl mx-auto px-4">
+				<div class="bg-secondary p-8 lg:p-16 rounded-2xl">
+					<h2
+						class="text-[32px]/[120%] -tracking-[1.5px] lg:text-[64px]/[110%] lg:-tracking-[4px] text-white font-semibold uppercase"
+					>
+						UNLOCK 20% OFF YOUR <br class="hidden lg:block" />FIRST ORDER
+					</h2>
+					<p class="text-xl text-[#C3D2CC] my-10">Reveal coupon code by entering your email</p>
+					<form action="" class="border-t border-[#346654] pt-10 flex items-center space-x-8">
+						<input
+							type="text"
+							class="w-full border border-[#346654] rounded-full p-4 lg:p-6"
+							placeholder="Email Address"
+						/>
+						<button class="btn !h-[72px] min-w-[160px]">Reveal coupon</button>
+					</form>
+				</div>
+			</div>
+		</section>
 		<footer class="pt-[120px]">
-			<div class="container">
+			<div class="container max-w-7xl mx-auto px-4">
 				<div class="grid lg:grid-cols-12 gap-8">
 					<div class="lg:col-span-4">
-						<img src="./assets/images/Logo-footer.svg" alt="" />
+						<img src="../../assets/images/Logo-footer.svg" alt="" />
 						<p class="text-[#9D9EA2] mt-8 font-normal">
 							#1 Canadian top rated online dispensary that meets the customers needs in
 							every single medical marijuana aspect. The team here at TopShelfBC is heavily
@@ -233,7 +316,7 @@
 								</li>
 							</ul>
 						</div>
-						<img src="./assets/images/payment.png" alt="" />
+						<img src="../../assets/images/payment.png" alt="" />
 					</div>
 				</div>
 				<div
@@ -250,6 +333,9 @@
 				</div>
 			</div>
 		</footer>
-		<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="../../assets/js/jquery.start-rating.svg.js"></script>
+		<script src="../../assets/main.js"></script>
 	</body>
 </html>
