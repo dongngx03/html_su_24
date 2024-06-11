@@ -28,9 +28,9 @@ input[type="number"]::-webkit-inner-spin-button {
     @apply h-[64px] leading-[64px] px-28 text-lg;
 }
 
-.main-title {
-    @apply text-[32px]/[120%] lg:mb-5 lg:text-[64px]/[110%]-tracking-[1.5px] lg:-tracking-[4px] font-semibold;
-}
+/* .main-title {
+    @apply text-[32px]/[120%] lg: mb-5 lg:text-[64px]/[110%]-tracking-[1.5px] lg:-tracking-[4px] font-semibold;
+} */
 
 @media (min-width: 768px) {
     .lg\:btn-lg {
