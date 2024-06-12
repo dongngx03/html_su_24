@@ -10,6 +10,7 @@ export default defineConfig({
 				category: resolve(__dirname, "src/pages/category.html"),
 				base: resolve(__dirname, "src/pages/base.html"),
 				base: resolve(__dirname, "src/pages/products.html"),
+				base: resolve(__dirname, "src/pages/order.html"),
 			},
 		},
 	},
